@@ -1,13 +1,13 @@
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 ul {
@@ -43,14 +43,16 @@ h4 {
   font-family: "Inter-Regular";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/Inter-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Inter-Bold";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff");
+  src: url("../fonts/Inter-Bold.woff2") format("woff2"),
+    url("../fonts/Inter-Bold.woff") format("woff");
 }
 
 body {
@@ -73,11 +75,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 3px 0 0 0;
 }
 
@@ -142,15 +144,15 @@ body {
   background-color: #5e5373;
   border-radius: 10px;
   -webkit-box-shadow: 0 8px 0 #3c354a;
-          box-shadow: 0 8px 0 #3c354a;
+  box-shadow: 0 8px 0 #3c354a;
   -webkit-transition-duration: 3s;
-          transition-duration: 3s;
+  transition-duration: 3s;
 }
 
 .bike__link:hover {
   background-color: #18b5a4;
   -webkit-box-shadow: 0 4px 0 #3c354a;
-          box-shadow: 0 4px 0 #3c354a;
+  box-shadow: 0 4px 0 #3c354a;
 }
 
 .bike__inner {
@@ -158,13 +160,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .bike__column-slider {
   -ms-flex-preferred-size: 200px;
-      flex-basis: 200px;
+  flex-basis: 200px;
   margin-left: 30px;
   max-width: 200px;
 }
@@ -197,4 +199,36 @@ body {
 
 .slick-active button {
   background-color: #ff4040;
+}
+@media (max-width: 900px) {
+  .header__inner img {
+    display: none;
+  }
+  .menu__link {
+    padding: 20px 5px;
+  }
+  .bike {
+    padding: 10px 0 20px;
+  }
+  .bike__title {
+    margin: 25px 0;
+    font-size: 41px;
+  }
+  .bike__subtitle {
+    margin: 5px 0 40px;
+    font-size: 22px;
+  }
+  .bike__link {
+    margin-top: 50px;
+    font-size: 14px;
+  }
+  .bike__inner {
+    flex-wrap: wrap;
+  }
+  .bike__column-slider {
+    margin-top: 50px;
+    max-width: 350px;
+    flex-basis: 350px;
+    margin-left: 0px;
+  }
 }
