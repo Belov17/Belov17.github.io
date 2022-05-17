@@ -63,7 +63,7 @@ body {
 }
 
 .container {
-  width: 1220px;
+  max-width: 1220px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -163,10 +163,10 @@ body {
 }
 
 .bike__column-slider {
-  -ms-flex-preferred-size: 630px;
-      flex-basis: 630px;
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
   margin-left: 30px;
-  max-width: 630px;
+  max-width: 200px;
 }
 
 .bike-slider .slick-dots {
